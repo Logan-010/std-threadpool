@@ -1,6 +1,6 @@
 use std::io::Write;
 use std::net::{TcpListener, TcpStream};
-use threadpool::ThreadPool;
+use std_threadpool::ThreadPool;
 
 fn handle_client(mut stream: TcpStream) {
     stream.write_all(b"Hello world").unwrap();
